@@ -1,8 +1,131 @@
 html,body{
-	height:100%;
+	height: 100%;
 	min-height: 100%;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	
 }
 body{
 	height: 100%;
-	font-family: 'Open Sans', sans-serif;
+	background:#f8f8f9;
+}
+.navbar{
+  min-height: 100px;
+  background: #fff;
+}
+.navbar .navbar-collapse{
+  margin-top: 25px;
+}
+.navbar-brand>img{
+  height: 75px;
+}
+.content{
+	position: relative;
+    min-height: 100%;
+}
+.content-body{
+	padding-bottom: 300px;
+}
+.language-bar{
+  position: relative;
+  background: #333;
+  font-size: 10px;
+  padding: 4px 0;
+}
+.language-bar a{
+  color: #ddd;
+  text-decoration: none;
+}
+.language-bar a:focus, .language-bar a:hover {
+  color: #fff;
+}
+a{
+  color: #222;
+}
+a:focus, a:hover {
+  color: #000;
+}
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 250px;
+  background-color: #222;
+  background-image: url(/assets/img/footer-bg.png);
+  background-size: cover;
+  margin-top:10px;
+  color:#ccc;
+  text-align: left;
+  border-top:2px solid #ddd;
+}
+footer a{
+  color:#ccc;
+}
+footer a:hover{
+  color:#fff;
+}
+footer ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+footer .row{
+  border-bottom: 1px solid #666;
+  padding: 20px 0;
+}
+
+.services a{
+  position: relative;
+  display: block;
+  background:#333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 70px;
+}
+.services a:hover{
+  background-color: #d2a02a;
+}
+.services a.service1{
+  background-image:url(/assets/img/sample/s1.png);
+}
+.services a.service2{
+  background-image:url(/assets/img/sample/s2.png);
+}
+.services a.service3{
+  background-image:url(/assets/img/sample/s3.png);
+}
+.services a.service4{
+  background-image:url(/assets/img/sample/s4.png);
+}
+.services a.service5{
+  background-image:url(/assets/img/sample/s5.png);
+}
+.services a.service6{
+  background-image:url(/assets/img/sample/s6.png);
+}
+
+.homepage{
+  background-color: #eee;
+  background-image: url(/assets/img/homepage.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-left:-15px;
+  margin-right:-15px;
+  margin-top:-20px;
+}
+.homepage-content{
+  margin-top: -100px;
+}
+.homepage-content-item{
+  background-color: #333;
+  padding: 10px;
+}
+.homepage-content-item a{
+  font-size:20px;
+  font-weight:bold;
+  color:#fff;
 }
