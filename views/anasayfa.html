@@ -4,14 +4,20 @@
 			<img ng-show="slide=='slide1'" src="/assets/img/home/slide1.jpg">
 			<img ng-show="slide=='slide2'" src="/assets/img/home/slide2.jpg">
 			<img ng-show="slide=='slide3'" src="/assets/img/home/slide3.jpg">
+			<img ng-show="slide=='slide4'" src="/assets/img/home/slide4.jpg">
+			<img ng-show="slide=='slide5'" src="/assets/img/home/slide5.jpg">
 		</div>
 		<div class="container text-content">
 			<div class="text-content-container" style="margin-left:{{slideTextPosition}}">
-				<div class="text-content-item"><h1>YAZI ALANI 1</h1><p>İçerik<br>
+				<div class="text-content-item"><h2>YAZI ALANI 1</h2><p>İçerik<br>
 				<a class="btn btn-primary">Daha fazlası</a></p></div>
-				<div class="text-content-item"><h1>YAZI ALANI 2</h1><p>İçerik<br>
+				<div class="text-content-item"><h2>YAZI ALANI 2</h2><p>İçerik<br>
 				<a class="btn btn-primary">Daha fazlası</a></p></div>
-				<div class="text-content-item"><h1>YAZI ALANI 3</h1><p>İçerik<br>
+				<div class="text-content-item"><h2>YAZI ALANI 3</h2><p>İçerik<br>
+				<a class="btn btn-primary">Daha fazlası</a></p></div>
+				<div class="text-content-item"><h2>YAZI ALANI 4</h2><p>İçerik<br>
+				<a class="btn btn-primary">Daha fazlası</a></p></div>
+				<div class="text-content-item"><h2>YAZI ALANI 5</h2><p>İçerik<br>
 				<a class="btn btn-primary">Daha fazlası</a></p></div>
 			</div>
 			<i class="navigation glyphicon glyphicon-menu-left" ng-click="changeSlide('prev')"></i>
@@ -23,13 +29,45 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-1">
-					<div class="homepage-content-item">
-						<a href="">YAŞAM HATTI<br><img src="/assets/img/homepage-yasamhatti.jpg" class="img-responsive"></a>
+					<div class="homepage-content-item lifeline" ng-click="openPage('/hizmetler/yasam-hatti')">
+						<h2>YAŞAM HATTI (LIFE LINE)</h2>
+						<ul>
+							<li>Yatay Yaşam Hatları</li>
+							<li>Dikey Yaşam Hatları</li>
+							<li>Raylı Sistemler</li>
+							<li>Mobile Sistemler</li>
+							<li>Düşüş Durdurucular</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col-md-5">
-					<div class="homepage-content-item">
-						<a href="">EĞİTİMLER<br><img src="/assets/img/homepage-egitimler.jpg" class="img-responsive"></a>
+					<div class="homepage-content-item cleaning" ng-click="openPage('/hizmetler/endustriyel-temizlik')">
+						<h2>TEMİZLİK HİZMETLERİ</h2>
+						<ul>
+							<li>Dış Cephe Cam</li>
+							<li>Çelik Konstrüksiyon</li>
+							<li>İnşaat Sonrası</li>
+							<li>Basınçlı Yıkama</li>
+							<li>Grafiti Temizliği</li>
+							<li>Boya Temizliği</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="homepage-content-item montage" ng-click="openPage('/hizmetler/montaj')">
+						<h2>MONTAJ HİZMETLERİ</h2>
+						<ul>
+							<li>Rüzgar Elektrik Santrali</li>
+							<li>Hidroelektrik Santralleri</li>
+							<li>Rüzgar Ölçüm Kulesi</li>
+							<li>Aydınlatma Sistemleri</li>
+							<li>Güvenlik Ağları</li>
+							<li>Sahne Kurulumu ve Uçuş Efektleri</li>
+							<li>Dekor ve Reklam Asım Hizmetleri</li>
+							<li>Boyama ve Silikon İşlemleri</li>
+						</ul>
 					</div>
 				</div>
 			</div>

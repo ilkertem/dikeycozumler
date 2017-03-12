@@ -130,6 +130,7 @@ footer .row{
   height: 100%;
 }
 .homepage .img-content img{
+  width:auto;
 -webkit-animation: fadein .2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein .2s; /* Firefox < 16 */
         -ms-animation: fadein .2s; /* Internet Explorer */
@@ -146,7 +147,7 @@ footer .row{
   overflow: hidden;
 }
 .homepage .text-content .text-content-container{
-  width: 300%;
+  width: 500%;
   margin-left:0px;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -154,7 +155,7 @@ footer .row{
 }
 .homepage .text-content .text-content-item{
   position: relative;
-  width: 33%;
+  width: 19%;
   display: inline-block;
   padding: 100px;
 }
@@ -180,11 +181,29 @@ footer .row{
   margin-top: -150px;
 }
 .homepage-content-item{
-  background-color: #333;
-  padding: 10px;
+  background-color: #d2a02a;
+  background-size: cover;
+  min-height: 200px;
+  cursor: pointer;
 }
-.homepage-content-item a{
-  font-size:20px;
-  font-weight:bold;
+.homepage-content-item.lifeline{
+  background-image: url(/assets/img/home/lifeline.jpg);
+}
+.homepage-content-item.cleaning{
+  background-image: url(/assets/img/home/cleaning.jpg);
+}
+.homepage-content-item.montage{
+  background-image: url(/assets/img/home/montage.jpg);
+}
+.homepage-content-item h2{
+  background-color: #d2a02a;
+  padding: 12px;
+  margin: 0;
+  font-size:24px;
   color:#fff;
+}
+@media (min-width: 768px){
+  .navbar {
+      border-radius: 0px;
+  }
 }
