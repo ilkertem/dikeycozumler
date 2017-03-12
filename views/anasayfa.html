@@ -1,5 +1,23 @@
 <div class="container-fluid">
 	<div class="homepage">
+		<div class="img-content">
+			<img ng-show="slide=='slide1'" src="/assets/img/home/slide1.jpg">
+			<img ng-show="slide=='slide2'" src="/assets/img/home/slide2.jpg">
+			<img ng-show="slide=='slide3'" src="/assets/img/home/slide3.jpg">
+		</div>
+		<div class="container text-content">
+			<div class="text-content-container" style="margin-left:{{slideTextPosition}}">
+				<div class="text-content-item"><h1>YAZI ALANI 1</h1><p>İçerik<br>
+				<a class="btn btn-primary">Daha fazlası</a></p></div>
+				<div class="text-content-item"><h1>YAZI ALANI 2</h1><p>İçerik<br>
+				<a class="btn btn-primary">Daha fazlası</a></p></div>
+				<div class="text-content-item"><h1>YAZI ALANI 3</h1><p>İçerik<br>
+				<a class="btn btn-primary">Daha fazlası</a></p></div>
+			</div>
+			<i class="navigation glyphicon glyphicon-menu-left" ng-click="changeSlide('prev')"></i>
+			<i class="navigation glyphicon glyphicon-menu-right" ng-click="changeSlide('next')"></i>
+		</div>
+		
 	</div>
 	<div class="homepage-content">
 		<div class="container">

@@ -6,7 +6,7 @@ html,body{
 }
 body{
 	height: 100%;
-	background:#f8f8f9;
+	background:#333;
 }
 .navbar{
   min-height: 100px;
@@ -72,6 +72,9 @@ footer .row{
   border-bottom: 1px solid #666;
   padding: 20px 0;
 }
+.content-ng{
+  color: #fff;
+}
 
 .services a{
   position: relative;
@@ -109,8 +112,8 @@ footer .row{
 }
 
 .homepage{
-  background-color: #f8f8f9;
-  background-image: url(/assets/img/home/slide1.jpg);
+  position: relative;
+  background-color: #333;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,6 +121,60 @@ footer .row{
   margin-left:-15px;
   margin-right:-15px;
   margin-top:-20px;
+}
+.homepage .img-content,.homepage .img-content img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.homepage .img-content img{
+-webkit-animation: fadein .2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein .2s; /* Firefox < 16 */
+        -ms-animation: fadein .2s; /* Internet Explorer */
+         -o-animation: fadein .2s; /* Opera < 12.1 */
+            animation: fadein .2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.homepage .text-content{
+  position: relative;
+  overflow: hidden;
+}
+.homepage .text-content .text-content-container{
+  width: 300%;
+  margin-left:0px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+.homepage .text-content .text-content-item{
+  position: relative;
+  width: 33%;
+  display: inline-block;
+  padding: 100px;
+}
+.homepage .navigation{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background:#333;
+  color:#d2a02a;
+  font-size: 30px;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+.homepage .navigation.glyphicon-menu-right{
+  left: auto;
+  right: 0;
 }
 .homepage-content{
   margin-top: -150px;

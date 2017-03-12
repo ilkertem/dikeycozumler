@@ -18,12 +18,10 @@ angular.module('dikeycozumler',[
 			templateUrl: 'views/montaj.html'
 		}).when('/hizmetler/endustriyel-temizlik', {
 			templateUrl: 'views/endustriyel-temizlik.html'
-		}).when('/hizmetler/rigging', {
-			templateUrl: 'views/rigging.html'
+		}).when('/hizmetler/yasam-hatti', {
+			templateUrl: 'views/yasam-hatti.html'
 		}).when('/hizmetler/ruzgar-enerjisi', {
 			templateUrl: 'views/ruzgar-enerjisi.html'
-		}).when('/blog', {
-			templateUrl: 'views/blog.html'
 		}).when('/iletisim', {
 			templateUrl: 'views/iletisim.html'
 		}).when('/404', {
@@ -34,5 +32,22 @@ angular.module('dikeycozumler',[
 		'$scope',
 		function($scope){
 			console.log('bodyController');
+			$scope.slide='slide1';
+
+			$scope.changeSlide=function(act){
+				console.log(act);
+				switch(act){
+					case 'next':
+						if($scope.slide=='slide1') $scope.slide='slide2'; $scope.slideTextPosition='-100%';
+						if($scope.slide=='slide2') $scope.slide='slide3'; $scope.slideTextPosition='-200%';
+						break;
+					case 'prev':
+						if($scope.slide=='slide2') $scope.slide='slide1'; $scope.slideTextPosition='0px';
+						if($scope.slide=='slide3') $scope.slide='slide2'; $scope.slideTextPosition='-100%';
+						break;
+					default:
+						$scope.slide=act;
+				}
+			}
 		}
 	]);
