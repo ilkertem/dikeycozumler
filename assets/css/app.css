@@ -183,8 +183,9 @@ footer .row{
 .homepage-content-item{
   background-color: #d2a02a;
   background-size: cover;
-  min-height: 200px;
+  min-height: 240px;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 .homepage-content-item.lifeline{
   background-image: url(/assets/img/home/lifeline.jpg);
@@ -201,6 +202,10 @@ footer .row{
   margin: 0;
   font-size:24px;
   color:#fff;
+}
+.homepage-content-item ul{
+  position: absolute;
+  bottom: 35px;
 }
 @media (min-width: 768px){
   .navbar {
