@@ -212,3 +212,19 @@ footer .row{
       border-radius: 0px;
   }
 }
+
+.tab-system{
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  margin-top:80px;
+}
+.tab-system .navig{
+  margin-top: -50px;
+}
+.tab-system .navig a{
+  font-size: 12px;
+}
+.tab-system .navig a.selected{
+  background-color:#d2a02a;
+}
